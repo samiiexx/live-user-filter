@@ -1,0 +1,116 @@
+/**
+ * Copyright 2021 sfchi
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ 
+
+ *{
+    box-sizing: border-box;
+}
+
+ body {
+     font-family: 'Roboto', sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     margin: 0;
+     background-color: #f8f9fd;
+     overflow: hidden;
+ }
+
+ .container {
+     border-radius: 5px;
+     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+     overflow: hidden;
+     width: 350px;
+ }
+
+ h1 {
+     margin: 0;
+     color: #fff;
+     font-size: 1.8rem;
+ }
+
+ .subtitle {
+     display: inline-block;
+     opacity: 0.8;
+     color: #fff;
+ }
+
+ .header {
+     background-color: #db7d3e;
+     padding: 2rem 1.2rem;
+ }
+
+ .header input {
+     background-color: rgba(0, 0, 0, 0.3);
+     border-radius: 50px;
+     color: #fff;
+     padding: 10px 15px;
+     margin: .8rem 0;
+     width: 100%;
+     border: none;
+ }
+
+ .header input:focus{
+     outline: 0;
+ }
+
+ .header input::placeholder{
+     color: #fff;
+ }
+
+ .user-list {
+     background-color: #fff;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     max-height: 400px;
+     overflow-y: auto;
+ }
+
+ .user-list li {
+     display: flex;
+     padding: 20px;
+ }
+
+ .user-list img {
+     border-radius: 50px;
+     object-fit: cover;
+     height: 2.5rem;
+     width: 2.5rem;
+ }
+
+ .user-info {
+     margin-left: 10px;
+ }
+
+ .user-list h2 {
+     margin: 0 0 10px;
+     font-size: 1rem;
+ }
+
+ .user-list p {
+     font-size: 12px;
+ }
+
+ .user-list li:not(:last-of-type) {
+     border-bottom: 1px solid #333;
+ }
+
+ .user-list li.hide {
+     display: none;
+ }
